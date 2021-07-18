@@ -9,14 +9,15 @@ function Header() {
       <div className="name">
         <h1>
           <span>Jardim funcional</span>
-          <br/>Quer saber como ter um jardim funcional?
+          <br/>VENHA APROVEITAR AS NOSSAS OFERTAS !!
         </h1>
         <p className="details">
-          Vamos te dar dicas de como ter um jardim prático, bonito e funcional.
+          Cadastre-se para ter acesso aos melhores descontos da nossa BLACK FRIDAY.
         </p>
-        <a href="#" className="cv-btn">
-          Download
-        </a>
+        <div className="contact-input">
+        <input type="email" placeholder="Escreve seu melhor e-mail"/>
+          <a href="#">Pegue seu Voucher</a>
+      </div>
       </div>
     </div>
   );

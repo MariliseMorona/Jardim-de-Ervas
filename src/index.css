@@ -93,10 +93,12 @@ nav .menu-btn,
 }
 .name span {
   color: #D63B77;
-  font-size: 52px;
+  font-size: 60px;
+
 }
 .name .details {
-  color: #969696;
+  color: #000000;
+  font-style: bold;
 }
 .name h1 {
   font-family: "Montserrat";
