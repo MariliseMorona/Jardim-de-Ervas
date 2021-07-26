@@ -31,7 +31,7 @@ input {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./assets/img/background.png");
+  background-image: url("./assets/img/background_simple.png");
 }
 nav {
   display: flex;

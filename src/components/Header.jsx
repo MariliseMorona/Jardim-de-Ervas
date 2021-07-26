@@ -15,9 +15,7 @@ function Header() {
         <p className="details">
           Faça seu login e adquira os melhores produtos de nossa loja.
         </p>
-        <Login>
-          
-        </Login>
+        <Login/>
       </div>
     </div>
   );
