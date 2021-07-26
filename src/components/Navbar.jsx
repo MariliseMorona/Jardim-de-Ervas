@@ -1,9 +1,12 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from '../assets/img/logo.png';
+import { CartContext } from './CartContext';
+import {Link} from "react-router-dom";
 
-function Navbar() {
-  const [nav, setnav] = useState(false);
+const Navbar = ({cartToggle}) => {
+const {shoppingCart} = useContext(CartContext);
+
+const [nav, setnav] = useState(false)
 
   const changeBackground = () => {
     if (window.scrollY >= 50) {
@@ -11,7 +14,7 @@ function Navbar() {
     } else {
       setnav(false);
     }
-  };
+  }
   window.addEventListener('scroll', changeBackground);
   return (
     <nav className={nav ? 'nav active' : 'nav'}>
@@ -40,9 +43,12 @@ function Navbar() {
         <li>
           <a href="#">Contato</a>
         </li>
+        <li onClick={cartToggle}><Link to="/cart"><span className="dollor"><i className="fas fa-cart-plus"></i></span><span className="shoppingCartTotal">{shoppingCart ? shoppingCart.length : 0}</span></Link>
+        </li>
       </ul>
     </nav>
   );
 }
+
 
 export default Navbar;
