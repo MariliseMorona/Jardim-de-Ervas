@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Navbar from './Navbar';
+import Login from './Login';
 
 function Header() {
   return (
@@ -9,15 +10,14 @@ function Header() {
       <div className="name">
         <h1>
           <span>Jardim funcional</span>
-          <br/>VENHA APROVEITAR AS NOSSAS OFERTAS !!
+          <br/>Divirta-se em nosso jardim virtual.
         </h1>
         <p className="details">
-          Cadastre-se para ter acesso aos melhores descontos da nossa BLACK FRIDAY.
+          Faça seu login e adquira os melhores produtos de nossa loja.
         </p>
-        <div className="contact-input">
-        <input type="email" placeholder="Escreve seu melhor e-mail"/>
-          <a href="#">Pegue seu Voucher</a>
-      </div>
+        <Login>
+          
+        </Login>
       </div>
     </div>
   );
