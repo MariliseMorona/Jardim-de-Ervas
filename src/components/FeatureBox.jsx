@@ -9,7 +9,9 @@ function FeatureBox(props) {
       </div>
       <div className="s-b-text">
         <h2>{props.title}</h2>
-        <p>Escolha a categoria de produtos que mais lhe agrada.</p>
+      </div>
+      <div className="s-b-text">
+        <p>{props.price}</p>
       </div>
     </div>
   )

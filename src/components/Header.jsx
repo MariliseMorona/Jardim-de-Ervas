@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Navbar from './Navbar';
-import Login from './Login';
+//import Login from './Login';
 
 function Header() {
   return (
@@ -15,8 +15,8 @@ function Header() {
         <p className="details">
           Faça seu login e adquira os melhores produtos de nossa loja.
         </p>
-        <Login/>
-      </div>
+        
+          </div>
     </div>
   );
 }

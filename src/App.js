@@ -1,6 +1,3 @@
-App.js
-
-
 import React from 'react';
 import Header from './components/Header';
 import Feature from './components/Feature';
@@ -10,10 +7,10 @@ import Presentation from './components/Presentation';
 import aboutimage from './assets/img/delivery.png';
 import aboutimage1 from './assets/img/services.png';
 import Contact from './components/Contact';
-import Login from './components/Login';
-import useToken from './components/UseToken';
+//import Login from './components/Login';
+//import useToken from './components/UseToken';
 
-function setToken(userToken) {
+/*function setToken(userToken) {
   sessionStorage.setItem('token', JSON.stringify(userToken));
 }
 
@@ -22,13 +19,13 @@ function getToken() {
   const userToken = JSON.parse(tokenString);
   return userToken?.token
 }
-
+*/
 function App() {
-  const { token, setToken } = useToken();
+  /*const { token, setToken } = useToken();
 
   if(!token) {
     return <Login setToken={setToken} />
-  }
+  }*/
   return (
     <div className="App">
       <Header />
@@ -39,6 +36,6 @@ function App() {
       <Contact />
     </div>
   );
-}
+  }
 
 export default App;
